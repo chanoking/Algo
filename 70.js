@@ -9,6 +9,7 @@ function pyramid(n, row = 0, level = "") {
   const midPoint = Math.floor((2 * n - 1) / 2);
   let add;
   if (midPoint - row <= level.length && midPoint + row >= level.length) {
+    console.log(level.length);
     add = "#";
   } else {
     add = " ";
@@ -16,3 +17,6 @@ function pyramid(n, row = 0, level = "") {
   pyramid(n, row, level + add);
 }
 pyramid(3);
+
+// let char = " "
+// console.log(char.length);
